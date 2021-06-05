@@ -1,0 +1,84 @@
+body {
+  background-color: $mainBgColor;
+
+  font-family: $mainFont;
+  font-weight: 500;
+  line-height: 1.25;
+  color: $textColor;
+}
+
+.button {
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 0px 30px 0px #ff793f4d;
+  background-color: $buttonBgColor;
+
+  font-family: $mainFont;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &__icon {
+    display: inline-block;
+    width: 10px;
+    height: 21px;
+    margin-right: 5px;
+  }
+
+  &--share {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 20px;
+
+    .addthis_inline_share_toolbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+
+    .at-resp-share-element {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .at-share-btn-elements {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .at-share-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 20px;
+
+    &__icon {
+      width: 15px;
+      height: 33px;
+      margin-right: 20px;
+    }
+
+    &--share {
+      padding: 17.5px 42px;
+    }
+  }
+}
