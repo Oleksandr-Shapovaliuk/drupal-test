@@ -1,0 +1,102 @@
+.order {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #e6effb;
+}
+
+.order__title {
+  margin-bottom: 30px;
+}
+
+.order__desc {
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.order__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__form-input {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid $titleColor;
+  background-color: transparent;
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: $textColor;
+}
+
+.order__druplicon-wrapper {
+  position: absolute;
+  top: -30px;
+  left: 35px;
+}
+
+.order__druplicon-img {
+  width: 49px;
+  height: 53px;
+}
+
+@media screen and (min-width: 768px) {
+  .order__desc {
+    max-width: 884px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .order {
+    background-image: url("../images/order/livello-1.svg");
+    background-repeat: no-repeat;
+    background-position: top 39px right 59px;
+  }
+
+  .order__desc {
+    margin-bottom: 50px;
+  }
+
+  .order__form {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .order__form-input {
+    flex-basis: calc((100% - 90px) / 4);
+    margin-bottom: unset;
+    margin-right: 30px;
+  }
+
+  .order__druplicon-wrapper {
+    position: absolute;
+    top: -65px;
+    left: 113px;
+  }
+
+  .order__druplicon-img {
+    width: unset;
+    height: unset;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .order__form-input {
+    flex-basis: calc((100% - 180px) / 4);
+    margin-bottom: unset;
+    margin-right: 60px;
+  }
+}

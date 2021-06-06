@@ -1,0 +1,80 @@
+.functional {
+  padding-top: 75px;
+}
+
+.functional__list-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.functional__card {
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .functional {
+    padding-top: 90px;
+  }
+
+  .functional__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .functional__list-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: unset;
+    }
+  }
+
+  .functional__list-desc {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .functional {
+    padding-top: 130px;
+    background-image: url("../images/functional/druplicon-1.svg");
+    background-repeat: no-repeat;
+    background-position: top 142px right 100px;
+  }
+
+  .functional__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .functional__list-item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+
+    &--center {
+      padding-top: 30px;
+    }
+  }
+
+  .functional__card {
+    height: unset;
+  }
+
+  .functional__list-desc {
+    height: unset;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .functional {
+    background-position: top 142px right 248px;
+  }
+}
